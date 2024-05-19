@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 const Verify = () => {
     
@@ -23,7 +23,9 @@ const Verify = () => {
     }, [id]);
     
     return (
-        <div>Verify</div>
+        <div>Your email is verified please go to login
+             <Link to='/login'><span className='px-2 py-1 text-blue-600 rounded-lg'>Go to Login</span></Link>
+        </div>
     );
 }
 
