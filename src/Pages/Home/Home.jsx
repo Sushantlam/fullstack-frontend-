@@ -25,8 +25,8 @@ const Home = () => {
 
   const handleClick = async () => {
     try {
-      const res = await axios.get(`https://backend-pgtt.onrender.com/auth/profile/${id}`);
-     
+      const res = await axios.get(`https://backend-pgtt.onrender.com/api/auth/profile/${id}`);
+     console.log(res);
 
       setProfile({
         email: res?.data.data.email,
