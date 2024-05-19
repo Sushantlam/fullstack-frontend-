@@ -1,0 +1,39 @@
+.add {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.418);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .add .modal {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: white;
+    z-index: 999;
+  }
+  
+  .add .modal .icon {
+    position: absolute;
+    top: -15px;
+    right: -5px;
+    color: gray;
+   
+  }
+  
+
+  .icon:hover{
+    cursor: pointer;
+  }
+ 
+  
+  .add .modal .input input {
+    padding: 10px;
+  }
+  
